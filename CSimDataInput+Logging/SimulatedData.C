@@ -37,7 +37,7 @@ int main() { // Main function where program execution begins
 
 
     fclose(f); //closes and saves the edits to the file
-    printf("Sensor data logged into file: data/sensor_log.csv\n"); //Prints confirmation to the console
+    printf("Simulated Sensor data logged into file: data/sensor_log.csv\n"); //Prints confirmation to the console
     return 0; //Exits the program
 
 }
