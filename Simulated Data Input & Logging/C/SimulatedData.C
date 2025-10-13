@@ -1,5 +1,7 @@
 //This program simulates data over 100 iterations and logs it, good to start out with before we introduce input from openCV laptop webcam and arduino sensors
 
+//A hiccup with this program that I need to solve is that for it to work across platforms, the /data subfolder must exist before compiling & running.
+
 
 #include <stdio.h>        // Includes functions for input/output like printf() and file operations.
 #include <stdlib.h>       // Includes functions for memory allocation, random numbers, and exit control.
