@@ -4,7 +4,9 @@ import os, random, time
 
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-csv_path = os.path.join(script_dir, "sensor_log_python.csv")
+data_dir = os.path.join(script_dir, "data")
+os.makedirs(data_dir, exist_ok = True)
+csv_path = os.path.join(data_dir, "sensor_log_python.csv")
 #os.makedirs("data", exist_ok = True)
 
 
