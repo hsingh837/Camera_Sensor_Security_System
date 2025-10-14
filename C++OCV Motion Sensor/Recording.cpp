@@ -23,7 +23,6 @@ int main() {
     if (!cap.isOpened()) {
         std::cerr << "Cannot Open Camera" << std::endl;
         return 1;
-
     }
 
     //Initialize Codec/State
