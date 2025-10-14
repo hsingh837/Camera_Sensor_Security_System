@@ -13,7 +13,7 @@
 ## 📌 Current Progress
 
 ### ✅ C: Simulated Sensor Data Input and Logging
-- Created a C program that simulates 100 iterations of sensor data over time.
+- Created a C, C++, and Python program that simulate 100 iterations of sensor data over time.
 - No delay was added, but a 1-second interval is planned.
 - This served as the foundational layer for future OpenCV development.
 
