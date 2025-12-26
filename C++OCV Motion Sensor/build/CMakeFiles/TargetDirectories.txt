@@ -1,0 +1,3 @@
+C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/C++MotionSensor.dir
+C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/ZERO_CHECK.dir
