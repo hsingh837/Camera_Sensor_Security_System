@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\harsh\Desktop\Harshal\Coding\Projects\GitHub\sensor_data_logger\C++OCV Motion Sensor\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\harsh\Desktop\Harshal\Coding\Projects\GitHub\sensor_data_logger\C++OCV Motion Sensor\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1EC4F34B-080C-3E8E-B723-2E0245455062}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
