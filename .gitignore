@@ -1,3 +1,5 @@
 PythonOCV & LLVL Sensor/Videos/*
 PythonOCV & LLVL Sensor/Videos/.gitkeep
 
+C++OCV Motion Sensor/build/Release/Output Videos/*
+C++OCV Motion Sensor/build/Release/OutputVideos/.gitkeep
