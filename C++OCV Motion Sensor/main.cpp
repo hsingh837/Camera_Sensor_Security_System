@@ -45,7 +45,7 @@ int main(int, char**) {
     VideoWriter writer;
     int codec = VideoWriter::fourcc('m', 'p', '4', 'v'); //my desired codec is .mp4, however documentation utilizes MJPG
     double fps = 60.0; //framerate of created videostream
-    string filename = "./live.mp4"; //name of output file
+    string filename = "./Output Videos/live.mp4"; //name of output file
     writer.open(filename, codec, fps, src.size(), isColor);
     if (!writer.isOpened()) {
         cerr << "Could not open the output video file for write\n";
