@@ -61,6 +61,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "message-v1"
@@ -78,7 +79,7 @@ events:
       The output was:
       0
       MSBuild version 18.0.5+e22287bf1 for .NET Framework
-      Build started 12/25/2025 9:25:51 PM.
+      Build started 12/26/2025 11:55:26 PM.
       
       Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\4.2.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -107,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.71
+      Time Elapsed 00:00:00.75
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -165,6 +166,7 @@ events:
       - "C:/Users/harsh/AppData/Roaming/npm/"
       - "C:/opt/opencv/build/x64/vc16/bin/"
       - "C:/opt/opencv/build/x64/vc16/lib/"
+      - "C:/Users/harsh/OpenCV/build/install/bin/"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
@@ -197,6 +199,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
@@ -246,6 +249,7 @@ events:
       - "C:/Users/harsh/AppData/Roaming/npm/"
       - "C:/opt/opencv/build/x64/vc16/bin/"
       - "C:/opt/opencv/build/x64/vc16/lib/"
+      - "C:/Users/harsh/OpenCV/build/install/bin/"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
@@ -326,6 +330,9 @@ events:
       - "C:/opt/opencv/build/x64/vc16/lib/lld-link.com"
       - "C:/opt/opencv/build/x64/vc16/lib/lld-link.exe"
       - "C:/opt/opencv/build/x64/vc16/lib/lld-link"
+      - "C:/Users/harsh/OpenCV/build/install/bin/lld-link.com"
+      - "C:/Users/harsh/OpenCV/build/install/bin/lld-link.exe"
+      - "C:/Users/harsh/OpenCV/build/install/bin/lld-link"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
@@ -358,6 +365,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
@@ -405,6 +413,7 @@ events:
       - "C:/Users/harsh/AppData/Roaming/npm/"
       - "C:/opt/opencv/build/x64/vc16/bin/"
       - "C:/opt/opencv/build/x64/vc16/lib/"
+      - "C:/Users/harsh/OpenCV/build/install/bin/"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
@@ -437,6 +446,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
@@ -484,6 +494,7 @@ events:
       - "C:/Users/harsh/AppData/Roaming/npm/"
       - "C:/opt/opencv/build/x64/vc16/bin/"
       - "C:/opt/opencv/build/x64/vc16/lib/"
+      - "C:/Users/harsh/OpenCV/build/install/bin/"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.com"
@@ -564,6 +575,9 @@ events:
       - "C:/opt/opencv/build/x64/vc16/lib/mt.com"
       - "C:/opt/opencv/build/x64/vc16/lib/mt.exe"
       - "C:/opt/opencv/build/x64/vc16/lib/mt"
+      - "C:/Users/harsh/OpenCV/build/install/bin/mt.com"
+      - "C:/Users/harsh/OpenCV/build/install/bin/mt.exe"
+      - "C:/Users/harsh/OpenCV/build/install/bin/mt"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/mt.com"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/mt.exe"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/mt"
@@ -596,6 +610,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
@@ -643,6 +658,7 @@ events:
       - "C:/Users/harsh/AppData/Roaming/npm/"
       - "C:/opt/opencv/build/x64/vc16/bin/"
       - "C:/opt/opencv/build/x64/vc16/lib/"
+      - "C:/Users/harsh/OpenCV/build/install/bin/"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.com"
@@ -675,6 +691,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
@@ -729,6 +746,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "message-v1"
@@ -746,7 +764,7 @@ events:
       The output was:
       0
       MSBuild version 18.0.5+e22287bf1 for .NET Framework
-      Build started 12/25/2025 9:25:52 PM.
+      Build started 12/26/2025 11:55:27 PM.
       
       Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\4.2.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -775,7 +793,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.49
+      Time Elapsed 00:00:00.69
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -833,6 +851,7 @@ events:
       - "C:/Users/harsh/AppData/Roaming/npm/"
       - "C:/opt/opencv/build/x64/vc16/bin/"
       - "C:/opt/opencv/build/x64/vc16/lib/"
+      - "C:/Users/harsh/OpenCV/build/install/bin/"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
@@ -913,6 +932,9 @@ events:
       - "C:/opt/opencv/build/x64/vc16/lib/lld-link.com"
       - "C:/opt/opencv/build/x64/vc16/lib/lld-link.exe"
       - "C:/opt/opencv/build/x64/vc16/lib/lld-link"
+      - "C:/Users/harsh/OpenCV/build/install/bin/lld-link.com"
+      - "C:/Users/harsh/OpenCV/build/install/bin/lld-link.exe"
+      - "C:/Users/harsh/OpenCV/build/install/bin/lld-link"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
@@ -945,6 +967,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
   -
     kind: "find-v1"
@@ -994,6 +1017,7 @@ events:
       - "C:/Users/harsh/AppData/Roaming/npm/"
       - "C:/opt/opencv/build/x64/vc16/bin/"
       - "C:/opt/opencv/build/x64/vc16/lib/"
+      - "C:/Users/harsh/OpenCV/build/install/bin/"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
@@ -1083,6 +1107,9 @@ events:
       - "C:/opt/opencv/build/x64/vc16/lib/rc.com"
       - "C:/opt/opencv/build/x64/vc16/lib/rc.exe"
       - "C:/opt/opencv/build/x64/vc16/lib/rc"
+      - "C:/Users/harsh/OpenCV/build/install/bin/rc.com"
+      - "C:/Users/harsh/OpenCV/build/install/bin/rc.exe"
+      - "C:/Users/harsh/OpenCV/build/install/bin/rc"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/rc.com"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/rc.exe"
       - "C:/Users/harsh/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/rc"
@@ -1151,6 +1178,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/C++MotionSensor"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -1167,8 +1195,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-dhpuhl"
-      binary: "C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-dhpuhl"
+      source: "C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-5i6adq"
+      binary: "C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-5i6adq"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1177,39 +1205,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-dhpuhl'
+        Change Dir: 'C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-5i6adq'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a959f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fbf8b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.0.5+e22287bf1 for .NET Framework
-        Build started 12/25/2025 9:25:53 PM.
+        Build started 12/26/2025 11:55:28 PM.
         
-        Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhpuhl\\cmTC_a959f.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5i6adq\\cmTC_fbf8b.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhpuhl\\Debug\\".
-          Creating directory "cmTC_a959f.dir\\Debug\\cmTC_a959f.tlog\\".
+          Creating directory "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5i6adq\\Debug\\".
+          Creating directory "cmTC_fbf8b.dir\\Debug\\cmTC_fbf8b.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_a959f.dir\\Debug\\cmTC_a959f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_a959f.dir\\Debug\\cmTC_a959f.tlog\\unsuccessfulbuild".
+          Creating "cmTC_fbf8b.dir\\Debug\\cmTC_fbf8b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_fbf8b.dir\\Debug\\cmTC_fbf8b.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_a959f.dir\\Debug\\\\" /Fd"cmTC_a959f.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_fbf8b.dir\\Debug\\\\" /Fd"cmTC_fbf8b.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35721 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_a959f.dir\\Debug\\\\" /Fd"cmTC_a959f.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_fbf8b.dir\\Debug\\\\" /Fd"cmTC_fbf8b.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhpuhl\\Debug\\cmTC_a959f.exe" /INCREMENTAL /ILK:"cmTC_a959f.dir\\Debug\\cmTC_a959f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-dhpuhl/Debug/cmTC_a959f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-dhpuhl/Debug/cmTC_a959f.lib" /MACHINE:X64  /machine:x64 cmTC_a959f.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_a959f.vcxproj -> C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhpuhl\\Debug\\cmTC_a959f.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5i6adq\\Debug\\cmTC_fbf8b.exe" /INCREMENTAL /ILK:"cmTC_fbf8b.dir\\Debug\\cmTC_fbf8b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-5i6adq/Debug/cmTC_fbf8b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-5i6adq/Debug/cmTC_fbf8b.lib" /MACHINE:X64  /machine:x64 cmTC_fbf8b.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_fbf8b.vcxproj -> C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5i6adq\\Debug\\cmTC_fbf8b.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_a959f.dir\\Debug\\cmTC_a959f.tlog\\unsuccessfulbuild".
-          Touching "cmTC_a959f.dir\\Debug\\cmTC_a959f.tlog\\cmTC_a959f.lastbuildstate".
-        Done Building Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhpuhl\\cmTC_a959f.vcxproj" (default targets).
+          Deleting file "cmTC_fbf8b.dir\\Debug\\cmTC_fbf8b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_fbf8b.dir\\Debug\\cmTC_fbf8b.tlog\\cmTC_fbf8b.lastbuildstate".
+        Done Building Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5i6adq\\cmTC_fbf8b.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.46
+        Time Elapsed 00:00:00.75
         
       exitCode: 0
   -
@@ -1249,8 +1277,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-po7nd2"
-      binary: "C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-po7nd2"
+      source: "C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-h1sbkj"
+      binary: "C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-h1sbkj"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1260,39 +1288,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-po7nd2'
+        Change Dir: 'C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-h1sbkj'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_46308.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d0127.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.0.5+e22287bf1 for .NET Framework
-        Build started 12/25/2025 9:25:54 PM.
+        Build started 12/26/2025 11:55:30 PM.
         
-        Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po7nd2\\cmTC_46308.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h1sbkj\\cmTC_d0127.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po7nd2\\Debug\\".
-          Creating directory "cmTC_46308.dir\\Debug\\cmTC_46308.tlog\\".
+          Creating directory "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h1sbkj\\Debug\\".
+          Creating directory "cmTC_d0127.dir\\Debug\\cmTC_d0127.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_46308.dir\\Debug\\cmTC_46308.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_46308.dir\\Debug\\cmTC_46308.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d0127.dir\\Debug\\cmTC_d0127.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d0127.dir\\Debug\\cmTC_d0127.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_46308.dir\\Debug\\\\" /Fd"cmTC_46308.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_d0127.dir\\Debug\\\\" /Fd"cmTC_d0127.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35721 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_46308.dir\\Debug\\\\" /Fd"cmTC_46308.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_d0127.dir\\Debug\\\\" /Fd"cmTC_d0127.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po7nd2\\Debug\\cmTC_46308.exe" /INCREMENTAL /ILK:"cmTC_46308.dir\\Debug\\cmTC_46308.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-po7nd2/Debug/cmTC_46308.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-po7nd2/Debug/cmTC_46308.lib" /MACHINE:X64  /machine:x64 cmTC_46308.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_46308.vcxproj -> C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po7nd2\\Debug\\cmTC_46308.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h1sbkj\\Debug\\cmTC_d0127.exe" /INCREMENTAL /ILK:"cmTC_d0127.dir\\Debug\\cmTC_d0127.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-h1sbkj/Debug/cmTC_d0127.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++OCV Motion Sensor/build/CMakeFiles/CMakeScratch/TryCompile-h1sbkj/Debug/cmTC_d0127.lib" /MACHINE:X64  /machine:x64 cmTC_d0127.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_d0127.vcxproj -> C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h1sbkj\\Debug\\cmTC_d0127.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_46308.dir\\Debug\\cmTC_46308.tlog\\unsuccessfulbuild".
-          Touching "cmTC_46308.dir\\Debug\\cmTC_46308.tlog\\cmTC_46308.lastbuildstate".
-        Done Building Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-po7nd2\\cmTC_46308.vcxproj" (default targets).
+          Deleting file "cmTC_d0127.dir\\Debug\\cmTC_d0127.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d0127.dir\\Debug\\cmTC_d0127.tlog\\cmTC_d0127.lastbuildstate".
+        Done Building Project "C:\\Users\\harsh\\Desktop\\Harshal\\Coding\\Projects\\GitHub\\sensor_data_logger\\C++OCV Motion Sensor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h1sbkj\\cmTC_d0127.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.50
+        Time Elapsed 00:00:00.71
         
       exitCode: 0
   -
@@ -1326,7 +1354,7 @@ events:
   -
     kind: "find_package-v1"
     backtrace:
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
     name: "OpenCV"
     configs:
       -
@@ -1398,6 +1426,7 @@ events:
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\bin"
         - "C:\\opt\\opencv\\build\\x64\\vc16\\lib"
+        - "C:\\Users\\harsh\\OpenCV\\build\\install\\bin"
         - "c:\\Users\\harsh\\.vscode\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/C++MotionSensor"
       CMAKE_SYSTEM_PREFIX_PATH:

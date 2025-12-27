@@ -22,9 +22,19 @@ def changed(curr_avg, prev_avg):
     rel = diff / max (1.0, prev_avg)
     return (diff >= THRESH_ABS) or (rel >= THRESH_REL)
 
+def next_index(folder, prefix, ext): #this function allows me to sequentially create csv's after each run and not overwrite
+    files = [f for f in OS.listdir(folder) if f.startswith(prefix) and f.endswith(ext)]
+    nums = []
+    for f in files:
+        s = f[len(prefix):-len(ext)]
+        if s.isdigit():
+            nums.append(int(s))
+    return (max(nums)+ 1) if nums else 1
+
+
 OS.chdir(OS.path.dirname(OS.path.abspath(__file__)))
 OS.makedirs("Videos", exist_ok = True)
-
+OS.makedirs("Data", exist_ok = True)
 
 cap = cv.VideoCapture(0)
 if not cap.isOpened():
@@ -72,7 +82,9 @@ while True:
             print(f"Recording Started: {filename}")
 
     elif key in (ord('l'), ord('L')) and recording and not sensor_active: #dealing with uppercase and lowercase keypress, should do this for recording too.
-        #start light sensor logging
+        #start light sensor logging and index csv's
+        idx = next_index("Data", "LightLog", ".csv")
+        CSV_NAME = f"Data/LightLog{idx}.csv"
         sensor_file = open(CSV_NAME, "w", newline="")
         sensor_writer = csv.writer(sensor_file)
         sensor_writer.writerow(["time", "Detection"]) #The header of the .csv file
