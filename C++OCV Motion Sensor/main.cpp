@@ -91,7 +91,7 @@ int main(int, char**)
     Mat gray, diff, threshImg;
 
     // --- Tunables for "SIGNIFICANT movement"
-    // May need to tweak these depending on camera noise/lighting.
+    // May need to tweak these depending on camera noise/lighting. Is it possible to get these to tune automatically?
     const int    DIFF_THRESH = 25;   // pixel intensity change threshold (0..255)
     const double MOTION_RATIO = 0.02; // fraction of pixels changed to count as "motion" (2%)
     // ---
