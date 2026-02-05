@@ -16,7 +16,7 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 #creating executable
-add_executable(C++MotionSensor main.cpp)
+add_executable(C++MotionSensor src/main.cpp)
 
 #Linking OpenCV Libraries
 target_link_libraries(C++MotionSensor ${OpenCV_LIBS})
