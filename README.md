@@ -235,3 +235,4 @@ The project prioritizes:
 * Incremental validation
 * Learning through implementation
 
+## Author: hsingh837
