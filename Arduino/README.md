@@ -2,23 +2,23 @@
 
 This folder contains all **microcontroller-level firmware** for the security system project.
 
-The Arduino subsystem is responsible for **direct interaction with the physical world**: sensing, basic signal processing, immediate responses, and structured event generation. Higher-level interpretation, data fusion, and alerting are handled by OpenCV (C++ / Python) and MATLAB.
+The Arduino subsystem serves as the **physical sensing and immediate response layer** of the system. It interfaces directly with sensors and actuators, performs lightweight signal processing, and generates **structured, time-bounded events** that are consumed by PC-side software (OpenCV-based vision modules and MATLAB analysis).
 
-This directory is organized as a **set of independent nodes**, each with a clearly defined responsibility. The structure is intentionally modular to support **concurrent operation, future expansion, and hardware changes** without requiring large refactors.
+The architecture is intentionally **modular and forward-looking**. Some nodes provide fully implemented functionality today, while others establish infrastructure for capabilities that will be added incrementally as additional hardware and complexity are introduced.
 
 ---
 
-## System-Level Role
+## System Role
 
-At a high level, the Arduino layer answers questions like:
+At a system level, the Arduino layer answers questions such as:
 
-* What physical events are occurring right now?
+* What physical or environmental events are occurring right now?
 * Has the system been moved, obstructed, or tampered with?
-* Is there an environmental or safety hazard present?
-* Should the system react immediately (alarm, indicator, relay)?
-* How should raw sensor events be forwarded upstream?
+* Are there thermal, audio, or hazard indicators present?
+* Should the system trigger an immediate physical response?
+* How should events be timestamped and transmitted upstream?
 
-The Arduino layer does **not** attempt to perform heavy data analysis or long-term logging. Instead, it produces **time-bounded, structured events** that are consumed by PC-side processes.
+The Arduino layer does **not** perform heavy data analysis, long-term storage, or high-level decision-making. Those responsibilities are intentionally delegated to PC-side software.
 
 ---
 
@@ -42,16 +42,16 @@ The Arduino layer does **not** attempt to perform heavy data analysis or long-te
            v
 +----------------------+
 |   MATLAB Analysis    |
-|   & Messaging        |
+|   & Alerts           |
 +----------------------+
 ```
 
-Each Arduino node is designed to:
+Each Arduino node:
 
-* Operate independently
-* Avoid blocking delays
-* Publish events instead of raw streams
-* Remain replaceable or extensible
+* Operates independently
+* Uses non-blocking logic
+* Generates events rather than raw streams
+* Can evolve without impacting other nodes
 
 ---
 
@@ -71,17 +71,15 @@ Arduino/
 └─ README.md
 ```
 
-Each node folder is a **standalone PlatformIO project** unless otherwise noted.
+Each node folder represents a **standalone PlatformIO project**, unless otherwise noted.
 
 ---
 
 ## Common Utilities (`common/`)
 
-This folder contains **shared definitions and utilities** used across multiple nodes.
-
 ### Purpose
 
-The `common` folder exists to prevent duplicated logic and ensure consistent behavior across the Arduino subsystem.
+The `common` folder contains **shared definitions and helpers** used across multiple nodes to ensure consistency and avoid duplicated logic.
 
 ### Current contents
 
@@ -100,21 +98,21 @@ common/
    └─ system_state.cpp
 ```
 
-### What these files do today
+### Current responsibilities
 
-* Define shared sensor interfaces
-* Provide non-blocking timing helpers
-* Centralize tunable thresholds
-* Establish consistent event identifiers
-* Track high-level system state
+* Shared sensor abstractions
+* Non-blocking timing utilities
+* Centralized tunable thresholds
+* Standardized event identifiers
+* High-level system state tracking
 
 ### Planned evolution
 
-In the future, this folder will likely grow to include:
+This folder is expected to grow to include:
 
-* Standardized message serialization
-* Versioned protocol definitions
-* Cross-node health and heartbeat logic
+* Message serialization formats
+* Versioned event schemas
+* Cross-node heartbeat and health monitoring
 
 ---
 
@@ -122,12 +120,15 @@ In the future, this folder will likely grow to include:
 
 ### Purpose
 
-This node monitors **thermal activity** using two independent mechanisms:
+Monitors **thermal activity** using two independent mechanisms:
 
 * Infrared thermal body detection
 * Rapid ambient temperature change detection
 
-It exists to detect the **presence of heat-emitting bodies** and **abnormal thermal transitions**.
+### Hardware used
+
+* AMG883 infrared thermal sensor
+* Temperature/humidity sensors (DHT11-class)
 
 ### Structure
 
@@ -147,19 +148,19 @@ thermal_node/
 
 ### Current responsibilities
 
-* Acquire thermal sensor data
-* Detect thermal bodies independently of motion
-* Monitor temperature deltas over short windows
-* Fuse thermal signals into single events
+* Detect heat-emitting bodies (coarse resolution)
+* Detect temperature changes exceeding defined thresholds
+* Fuse thermal indicators into structured events
+
+### Design notes
+
+The AMG883 provides low-resolution (8×8) thermal data and is used for **presence detection**, not detailed imaging.
 
 ### Planned evolution
 
-Future revisions will define:
-
-* Sensor placement assumptions
 * Calibration routines
-* Event confidence scoring
-* Timestamp alignment with other nodes
+* Confidence scoring
+* Correlation with motion and audio data
 
 ---
 
@@ -167,11 +168,11 @@ Future revisions will define:
 
 ### Purpose
 
-This node handles **acoustic sensing**, including:
+Detects **audio activity** and characterizes sound presence over time.
 
-* Sound level detection
-* Sustained audio classification
-* Audio recording when appropriate
+### Hardware used
+
+* Multiple basic microphone modules
 
 ### Structure
 
@@ -193,19 +194,20 @@ audio_node/
 
 ### Current responsibilities
 
-* Sample multiple microphones
-* Compute decibel levels
-* Detect sustained audio events
-* Manage on-device audio recording
+* Sample microphone inputs
+* Estimate sound level
+* Detect sustained audio activity
+* Generate audio-presence events
 
-### Planned evolution
+### Planned (future) capabilities
 
-This node will eventually define:
+This node is **designed** to later support:
 
-* Audio file formats
-* Storage limits and rotation
-* Noise floor calibration
-* Metadata tagging for recorded clips
+* Audio recording to file
+* Voice capture
+* Metadata tagging of audio clips
+
+These features will be implemented once external storage and appropriate audio hardware are added.
 
 ---
 
@@ -213,7 +215,16 @@ This node will eventually define:
 
 ### Purpose
 
-This node monitors the **physical integrity and placement** of the system itself.
+Monitors the **physical integrity, placement, and tampering state** of the system.
+
+### Hardware used
+
+* Ultrasonic sensor
+* Laser ranging module
+* MPU6050 / GY-521 IMU
+* Vibration sensor
+* Tilt switch
+* IR obstacle avoidance sensor
 
 ### Structure
 
@@ -233,17 +244,15 @@ integrity_node/
 
 ### Current responsibilities
 
-* Detect obstruction via proximity sensing
-* Detect shocks or vibration
+* Detect obstruction or close proximity
 * Detect movement, tilt, or repositioning
+* Detect shock or vibration
 
 ### Planned evolution
 
-Future work will:
-
-* Define acceptable placement envelopes
-* Add tamper severity levels
-* Correlate integrity events with other nodes
+* Severity classification
+* Correlation with other sensor events
+* Integration with local authorization inputs
 
 ---
 
@@ -251,7 +260,13 @@ Future work will:
 
 ### Purpose
 
-This node manages **human interaction and access control**.
+Handles **local user interaction and authorization infrastructure**.
+
+### Hardware used
+
+* Buttons
+* RFID module
+* Keypad module
 
 ### Structure
 
@@ -271,17 +286,18 @@ auth_node/
 
 ### Current responsibilities
 
-* Authenticate authorized users
-* Accept PIN or card input
-* Handle manual overrides
+* Detect physical user interaction
+* Capture RFID and keypad inputs
+* Generate interaction events
 
-### Planned evolution
+### Planned (future) capabilities
 
-This node will later:
+This node is designed to later support:
 
-* Define authorization levels
-* Log access attempts
-* Integrate with PC-side authentication logic
+* Full authorization logic
+* User roles and permissions
+* Arm/disarm policy enforcement
+* PC-side authentication integration
 
 ---
 
@@ -289,7 +305,14 @@ This node will later:
 
 ### Purpose
 
-This node detects **non-intrusion environmental hazards**.
+Detects **environmental and safety hazards** unrelated to intrusion.
+
+### Hardware used
+
+* MQ-2 gas/smoke sensor
+* Flame sensor
+* Water level / raindrop sensor
+* Atmospheric pressure sensor
 
 ### Structure
 
@@ -310,16 +333,14 @@ hazard_node/
 ### Current responsibilities
 
 * Detect gas or smoke
-* Detect open flames
+* Detect open flame
 * Detect water exposure
 
 ### Planned evolution
 
-Future development may:
-
-* Classify hazard severity
-* Trigger automatic system responses
-* Feed hazard data into long-term analysis
+* Hazard severity classification
+* Automatic escalation logic
+* Trend-based detection
 
 ---
 
@@ -327,7 +348,15 @@ Future development may:
 
 ### Purpose
 
-This node executes **physical responses** to events.
+Executes **physical responses and system feedback**.
+
+### Hardware used
+
+* Relays
+* Buzzers
+* LEDs / RGB LEDs / traffic light module
+* LCD / OLED displays
+* Motors and servos (limited use)
 
 ### Structure
 
@@ -347,17 +376,15 @@ output_node/
 
 ### Current responsibilities
 
-* Activate relays
-* Emit audible alerts
-* Display system status
+* Audible alerts
+* Visual status indicators
+* Relay-based actuation
 
 ### Planned evolution
 
-This node will eventually:
-
-* Support alert prioritization
-* Allow configurable output behavior
-* Coordinate responses across nodes
+* Alert prioritization
+* Configurable response policies
+* Coordinated multi-output behavior
 
 ---
 
@@ -365,7 +392,13 @@ This node will eventually:
 
 ### Purpose
 
-This node manages **timekeeping and outbound communication**.
+Manages **timekeeping and external communication**.
+
+### Hardware used
+
+* ESP8266 Wi-Fi module
+* Bluetooth module
+* DS1307 / DS1302 RTC modules
 
 ### Structure
 
@@ -385,41 +418,25 @@ comms_node/
 
 ### Current responsibilities
 
-* Maintain accurate time
-* Provide communication pathways
-* Bridge Arduino data to external systems
+* Maintain accurate timestamps
+* Provide communication channels
+* Forward events to PC-side systems
 
 ### Planned evolution
 
-Future work will define:
-
-* Messaging formats
-* Retry and buffering behavior
-* Integration with MATLAB alerting pipelines
+* Message buffering and retries
+* Unified event transport format
+* Tight integration with MATLAB alerting
 
 ---
 
 ## Calibration (`calibration/`)
 
-This folder contains **temporary, task-specific firmware projects** used during setup and validation.
+Contains **temporary firmware projects** used to calibrate and validate sensors during setup.
 
-These projects are not part of the deployed system.
+These projects are not part of the deployed system and will evolve freely as hardware is tested.
 
 ---
 
 ## Closing Notes
-
-This Arduino subsystem is intentionally designed to:
-
-* Scale horizontally (more nodes)
-* Evolve vertically (more logic per node)
-* Tolerate hardware changes
-* Integrate cleanly with PC-side software
-
-As the system matures, this README will expand to include:
-
-* Pin mappings
-* Event schemas
-* Communication protocols
-* Timing diagrams
 
