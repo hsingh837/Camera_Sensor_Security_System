@@ -1,0 +1,1 @@
+-- Documenting all the developing done on the self-hosting Ubuntu Native PC running the SMS microservice and (possibly) SQL database on the Ubuntu system to handle program/sensor data (currently running the SQL database to handle program data locally) --
