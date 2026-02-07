@@ -13,7 +13,7 @@ Rather than focusing on a single technology, CAMSENS intentionally combines **ph
 CAMSENS began as a way to learn **C and C++**, but has since grown into a full-stack systems project intended to develop practical skills in:
 
 * **Embedded systems** (Arduino, real sensors)
-* **Computer vision** (C++ & Python with OpenCV)
+* **Computer vision** (C++, Python, and Java with OpenCV)
 * **Data analysis** (MATLAB)
 * **Databases & SQL**
 * **Infrastructure & DevOps** (Docker, Linux, VPNs)
@@ -38,9 +38,9 @@ At a high level, CAMSENS is composed of **five cooperating layers**, each with a
         |
         |  Events
         v
-+------------------------+
-|  OpenCV (C++ / Python) |
-+------------------------+
++-------------------------------+
+|  OpenCV Perception Subsystems |
++-------------------------------+
         |
         |  Structured Data
         v
@@ -91,7 +91,9 @@ The Arduino layer interfaces directly with the real world and acts as an **event
 
 ## 👁️ Vision & Perception Layer (OpenCV)
 
-CAMSENS uses **two independent OpenCV subsystems**, each serving a different perceptual role.
+CAMSENS uses **three independent OpenCV subsystems**, each serving a different perceptual role and execution model.
+
+---
 
 ### C++ OpenCV – Motion Detection
 
@@ -101,7 +103,7 @@ CAMSENS uses **two independent OpenCV subsystems**, each serving a different per
 * Sequential CSV and video output
 * Deterministic, timed execution
 
-This serves as the **primary visual motion sensor**.
+This subsystem serves as the **primary real-time visual motion sensor**.
 
 ---
 
@@ -113,6 +115,21 @@ This serves as the **primary visual motion sensor**.
 * Synchronized video recording and logging
 
 This subsystem provides **environmental context** that motion detection alone cannot capture.
+
+---
+
+### Java OpenCV – Autonomous Visual Behavior Logging
+
+* Timed, autonomous execution
+* Webcam-based visual telemetry
+* Optical flow and scene dynamics analysis
+* Object persistence and dwell-time estimation
+* Frame-level and session-level CSV output
+* No real-time alerts or sensor dependencies
+
+This subsystem functions as an **offline, batch-executed visual sensor**, focused on extracting **temporal behavior patterns** rather than reacting to individual events.
+
+📁 See `AutonomousVisionLogger/README.md` for detailed design and output schema.
 
 ---
 
@@ -134,6 +151,7 @@ CAMSENS is transitioning to a **centralized SQL database**, running as a Docker 
   * Arduino nodes
   * C++ OpenCV programs
   * Python OpenCV programs
+  * Java OpenCV telemetry runs
 * Be queried directly by MATLAB for analysis
 
 This layer also serves as the primary vehicle for learning **SQL and data modeling**.
@@ -165,7 +183,7 @@ This separation keeps:
 
 ## 🐳 Infrastructure & Deployment
 
-CAMSENS' messaging alerts protocol is soon to be developed, securely self-hosted, and deployed on a **custom built dual-boot Windows / Ubuntu PC**, which also hosts other services such as Immich, NextCloud, and more.
+CAMSENS’ messaging and data services are designed to be securely self-hosted and deployed on a **custom-built dual-boot Windows / Ubuntu PC**, which also hosts other services such as Immich and Nextcloud.
 
 ### Infrastructure Highlights
 
@@ -174,7 +192,7 @@ CAMSENS' messaging alerts protocol is soon to be developed, securely self-hosted
 * CAMSENS runs as one containerized service among others
 * Designed for headless operation and remote monitoring
 
-This layer provides and supplements existing hands-on experience with **Linux, Docker, networking, and service orchestration**.
+This layer provides hands-on experience with **Linux, Docker, networking, and service orchestration**.
 
 ---
 
@@ -199,9 +217,10 @@ This phase is intentionally deferred until the system’s behavior is fully unde
 
 ```
 CAMSENS/
-├─ Arduino/                 # Embedded firmware (node-based)
-├─ C++OCV Motion Sensor/    # C++ OpenCV motion detection
-├─ PythonOCV & LVL Sensor/  # Python OpenCV light-level sensing
+├─ Arduino/                      # Embedded firmware (node-based)
+├─ C++OCV Motion Sensor/         # C++ OpenCV motion detection
+├─ PythonOCV & LVL Sensor/       # Python OpenCV light-level sensing
+├─ AutonomousVisionLogger/       # Java OpenCV behavior logging
 ├─ MATLABAnalysis_TextAlerts/
 ├─ SimulatedData_InputLogging/
 ├─ Docker/ (planned)
@@ -216,6 +235,7 @@ Each major subsystem has its own README with detailed documentation.
 
 * ✅ OpenCV motion detection (C++)
 * ✅ OpenCV light-level sensing (Python)
+* ⚠️ Autonomous visual behavior logging (Java, in development)
 * ✅ Arduino hardware acquired and architecture validated
 * ✅ Modular firmware design established
 * ⚠️ SQL data layer in active development
@@ -226,7 +246,7 @@ Each major subsystem has its own README with detailed documentation.
 
 ## 🧭 Closing Notes
 
-CAMSENS is intentionally **iterative**. Some subsystems are fully operational, others establish infrastructure for future capabilities. This README file reflects both **what exists today** and **what the system is designed to grow into**.
+CAMSENS is intentionally **iterative**. Some subsystems are fully operational, while others establish infrastructure for future capabilities. This README reflects both **what exists today** and **what the system is designed to grow into**.
 
 The project prioritizes:
 
@@ -235,4 +255,6 @@ The project prioritizes:
 * Incremental validation
 * Learning through implementation
 
-## Author: hsingh837
+---
+
+**Author:** hsingh837
