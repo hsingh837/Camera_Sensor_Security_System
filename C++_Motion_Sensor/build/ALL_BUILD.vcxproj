@@ -174,9 +174,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\harsh\Desktop\Harshal\Coding\Projects\GitHub\sensor_data_logger\C++_Motion_Sensor\build\C++MotionSensor.vcxproj">
-      <Project>{34A9145B-9163-390C-9F6D-438E80135AF2}</Project>
-      <Name>C++MotionSensor</Name>
+    <ProjectReference Include="C:\Users\harsh\Desktop\Harshal\Coding\Projects\GitHub\sensor_data_logger\C++_Motion_Sensor\build\motion_dual.vcxproj">
+      <Project>{9A0540EE-1C12-3BA3-BD4C-87E286DB0465}</Project>
+      <Name>motion_dual</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\harsh\Desktop\Harshal\Coding\Projects\GitHub\sensor_data_logger\C++_Motion_Sensor\build\motion_single.vcxproj">
+      <Project>{FE31A0DB-1B9D-36E7-A073-FF10F6D1C5D9}</Project>
+      <Name>motion_single</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

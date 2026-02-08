@@ -1,24 +1,44 @@
 cmake_minimum_required(VERSION 3.10)
-project(C++MotionSensor)
+project(CppMotionSensor)
 
-#Enabling C++ 17 to resolve filesystem not existing errors
+# Enabling C++17 (needed for filesystem)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-#Resolving editor errors
+# Export compile_commands.json (editor / LSP support)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-#Finding OpenCV Packages needed
+# Find OpenCV
 find_package(OpenCV REQUIRED)
-
-#Include Directories from OpenCV, needed for C/C++
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-#creating executable
-add_executable(C++MotionSensor src/main.cpp)
+# -------------------------------------------------
+# Program 1: Single-camera baseline
+# -------------------------------------------------
+add_executable(motion_single
+    src/main.cpp
+)
+target_link_libraries(motion_single
+    ${OpenCV_LIBS}
+)
 
-#Linking OpenCV Libraries
-target_link_libraries(C++MotionSensor ${OpenCV_LIBS})
+# -------------------------------------------------
+# Program 2: Dual-camera, non-threaded
+# -------------------------------------------------
+add_executable(motion_dual
+    src/main_2Cams.cpp
+)
+target_link_libraries(motion_dual
+    ${OpenCV_LIBS}
+)
 
-
+# # -------------------------------------------------
+# # Program 3: Dual-camera, threaded (future)
+# # -------------------------------------------------
+# #add_executable(motion_dual_threaded
+#     src/main_dual_threaded.cpp
+# )
+# target_link_libraries(motion_dual_threaded
+#     ${OpenCV_LIBS}
+# )

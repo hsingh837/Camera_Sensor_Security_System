@@ -1,3 +1,4 @@
-C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor/build/CMakeFiles/C++MotionSensor.dir
+C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor/build/CMakeFiles/motion_single.dir
+C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor/build/CMakeFiles/motion_dual.dir
 C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor/build/CMakeFiles/ALL_BUILD.dir
 C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor/build/CMakeFiles/ZERO_CHECK.dir

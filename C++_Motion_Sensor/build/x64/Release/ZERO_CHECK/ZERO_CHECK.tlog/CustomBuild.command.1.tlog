@@ -1,6 +1,6 @@
 ^C:\USERS\HARSH\DESKTOP\HARSHAL\CODING\PROJECTS\GITHUB\SENSOR_DATA_LOGGER\C++_MOTION_SENSOR\BUILD\CMAKEFILES\16018C292C6FE346A8D7ADF64E474A6D\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor -BC:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor/build/C++MotionSensor.slnx
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor -BC:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/harsh/Desktop/Harshal/Coding/Projects/GitHub/sensor_data_logger/C++_Motion_Sensor/build/CppMotionSensor.slnx
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
