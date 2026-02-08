@@ -161,8 +161,8 @@ while True:
             accum_sum = 0.0
             accum_count = 0
 
-            #We stop automatically at 30 seconds
-            if last_second_written >= 30:
+            #We stop automatically at 120 seconds
+            if last_second_written >= 120:
                 sensor_file.close()
                 sensor_active = False
                 print(f"Light sensor complete --> saved {CSV_NAME}")

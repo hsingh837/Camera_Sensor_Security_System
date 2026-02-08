@@ -221,9 +221,9 @@ int main(int, char**)
                 lastSecondTick = now;
             }
 
-            // Auto-terminate after 45 seconds (based on seconds logged)
-            if (secondsLogged >= 45) {
-                cout << "45 seconds complete. Auto-terminating.\n";
+            // Auto-terminate after 120 seconds (based on seconds logged)
+            if (secondsLogged >= 120) {
+                cout << "2 minutes (120 seconds) complete. Auto-terminating.\n";
                 break;
             }
         }

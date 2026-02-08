@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\harsh\Desktop\Harshal\Coding\Projects\GitHub\sensor_data_logger\C++OCV Motion Sensor\build\CMakeFiles\be31b16e751ab89d9715f15b32cdbada\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\harsh\Desktop\Harshal\Coding\Projects\GitHub\sensor_data_logger\C++_Motion_Sensor\build\CMakeFiles\16018c292c6fe346a8d7adf64e474a6d\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{741F47D2-D8B9-3B01-B3EF-68AF0834DBE0}</UniqueIdentifier>
+      <UniqueIdentifier>{421CBD77-4B1E-3E8A-A4A5-A172D9E9B514}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
