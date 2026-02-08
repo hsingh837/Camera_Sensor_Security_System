@@ -10,6 +10,7 @@
 	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="1b728f88-b482-3918-9419-8a51b3b9fc14" DefaultStartup="true">
 		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
 		<BuildDependency Project="motion_dual.vcxproj"/>
+		<BuildDependency Project="motion_dual_threaded.vcxproj"/>
 		<BuildDependency Project="motion_single.vcxproj"/>
 		<Build Solution="Debug|*" Project="false"/>
 		<Build Solution="Release|*" Project="false"/>
@@ -18,6 +19,9 @@
 	</Project>
 	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="012dbec5-6616-32e1-8b55-6ea1782a2b09"/>
 	<Project Path="motion_dual.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="9a0540ee-1c12-3ba3-bd4c-87e286db0465">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="motion_dual_threaded.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="fce5f197-ada3-3e51-975c-5102e962c39d">
 		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
 	</Project>
 	<Project Path="motion_single.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="fe31a0db-1b9d-36e7-a073-ff10f6d1c5d9">

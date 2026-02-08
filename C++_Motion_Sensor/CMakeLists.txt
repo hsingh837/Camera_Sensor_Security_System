@@ -36,9 +36,9 @@ target_link_libraries(motion_dual
 # # -------------------------------------------------
 # # Program 3: Dual-camera, threaded (future)
 # # -------------------------------------------------
-# #add_executable(motion_dual_threaded
-#     src/main_dual_threaded.cpp
-# )
-# target_link_libraries(motion_dual_threaded
-#     ${OpenCV_LIBS}
-# )
+add_executable(motion_dual_threaded
+    src/main_2Cams_Threaded.cpp
+)
+target_link_libraries(motion_dual_threaded
+    ${OpenCV_LIBS}
+)

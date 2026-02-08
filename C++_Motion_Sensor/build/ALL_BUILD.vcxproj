@@ -178,6 +178,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{9A0540EE-1C12-3BA3-BD4C-87E286DB0465}</Project>
       <Name>motion_dual</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\harsh\Desktop\Harshal\Coding\Projects\GitHub\sensor_data_logger\C++_Motion_Sensor\build\motion_dual_threaded.vcxproj">
+      <Project>{FCE5F197-ADA3-3E51-975C-5102E962C39D}</Project>
+      <Name>motion_dual_threaded</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\harsh\Desktop\Harshal\Coding\Projects\GitHub\sensor_data_logger\C++_Motion_Sensor\build\motion_single.vcxproj">
       <Project>{FE31A0DB-1B9D-36E7-A073-FF10F6D1C5D9}</Project>
       <Name>motion_single</Name>
