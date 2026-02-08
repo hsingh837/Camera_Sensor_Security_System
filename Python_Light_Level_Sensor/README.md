@@ -21,7 +21,7 @@ It acts as an **environmental awareness layer** for the overall system.
 ## High-Level Architecture
 
 ```
-[ Webcam / USB Camera ]
+[ Webcam / USB Camera(s) ]
            |
            v
 +-----------------------------+
@@ -47,10 +47,12 @@ PythonOCV & LVL Sensor/
 ├─ .venv/
 ├─ .vscode/
 ├─ Data/
-│  └─ LightLog.csv
+│  └─ LightLog[index].csv
 ├─ Videos/
 │  ├─ Output1.mp4
 │  ├─ Output2.mp4
+│  ├─ Cam1_OutputVideo[index].mp4
+│  ├─ Cam2_OutputVideo[index].mp4
 │  └─ ...
 ├─ Light_Level.py
 ├─ Recording.py

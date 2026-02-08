@@ -58,11 +58,12 @@ if w == 0 or h == 0:
 
 fps = 30
 
-idx = next_index("LightLog", ".csv", OUTPUT_DATA_DIR)
+idx_data = next_index("LightLog", ".csv", OUTPUT_DATA_DIR)
+idx_vid  = next_index("Cam1_OutputVideo", ".mp4", OUTPUT_VIDEO_DIR)
 
-csv_path = os.path.join(OUTPUT_DATA_DIR, f"LightLog{idx}.csv")
-v1_path = os.path.join(OUTPUT_VIDEO_DIR, f"Cam1_OutputVideo{idx}.mp4")
-v2_path = os.path.join(OUTPUT_VIDEO_DIR, f"Cam2_OutputVideo{idx}.mp4")
+csv_path = os.path.join(OUTPUT_DATA_DIR, f"LightLog{idx_data}.csv")
+v1_path  = os.path.join(OUTPUT_VIDEO_DIR, f"Cam1_OutputVideo{idx_vid}.mp4")
+v2_path  = os.path.join(OUTPUT_VIDEO_DIR, f"Cam2_OutputVideo{idx_vid}.mp4")
 
 fourcc = cv2.VideoWriter_fourcc(*"mp4v")
 out1 = cv2.VideoWriter(v1_path, fourcc, fps, (w, h))
