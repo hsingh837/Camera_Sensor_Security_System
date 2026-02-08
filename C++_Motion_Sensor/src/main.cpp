@@ -165,7 +165,7 @@ int main(int, char**)
             cvtColor(src, prevGray, COLOR_BGR2GRAY);
 
             cout << "Motion sensor started. Logging to: " << dataPath.string() << "\n";
-            cout << "Will auto-terminate after 45 seconds.\n";
+            cout << "Will auto-terminate after 2 minutes (120 seconds).\n";
         }
 
         // If recording, write every frame
