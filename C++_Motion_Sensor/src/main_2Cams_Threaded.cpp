@@ -473,11 +473,11 @@ int main(int argc, char** argv)
             {
                 secondsLogged += 1;
 
-                const string cam1Status = motionDetectedCam1ThisSecond ? "Motion" : "No motion";
+                const string cam1Status = motionDetectedCam1ThisSecond ? "Motion Detected" : "No motion";
 
                 if (cam2Available)
                 {
-                    const string cam2Status = motionDetectedCam2ThisSecond ? "Motion" : "No motion";
+                    const string cam2Status = motionDetectedCam2ThisSecond ? "Motion Detected" : "No motion";
                     csv  << secondsLogged << "," << cam1Status << "," << cam2Status << "\n";
                     cout << secondsLogged << "," << cam1Status << "," << cam2Status << "\n";
                 }
