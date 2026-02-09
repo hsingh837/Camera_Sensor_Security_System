@@ -1,0 +1,1 @@
+This portion of the project is to write a C# script that is able to take in all the .CSV files produced by each and every single program when ran, and send them to the SQL server for compilation into a single database.
