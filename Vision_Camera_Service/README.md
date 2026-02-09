@@ -1,0 +1,3 @@
+The purpose of this service is to allow motion sensor, visual behavior, and light level sensor programs to run concurrently and not cause conflicts by multiple programs in different languages all operating as independent processes attempting to access the same cameras. 
+
+This service will act as a single source of Visual input and pass down data and footage to the other programs for them to evaluate things accordingly. This service may be written in openCV, may call for one singular program in one singular language to combine all 3 portions of the project, currently uncertain. I anticipate many changes to source code, and all programs written will eventually be cloned into this project to tinker with.
