@@ -103,7 +103,7 @@ public class SessionController {
     }
 
     public boolean isStopped() {
-        returned stopped.get();
+        return stopped.get();
     }
 }
 
